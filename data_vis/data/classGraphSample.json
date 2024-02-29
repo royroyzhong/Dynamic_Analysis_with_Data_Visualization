@@ -1,0 +1,302 @@
+{
+    "nodes": [
+        {
+            "name": "Parser=>chatminer.chatparsers",
+            "value": 0,
+            "methods": [
+                {
+                    "name": "__init__",
+                    "value": 0
+                },
+                {
+                    "name": "parse_file_into_df",
+                    "value": 0
+                },
+                {
+                    "name": "write_df_to_csv",
+                    "value": 0
+                },
+                {
+                    "name": "_add_metadata",
+                    "value": 0
+                },
+                {
+                    "name": "_read_file_into_list",
+                    "value": 0
+                },
+                {
+                    "name": "_parse_message",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "SignalParser=>chatminer.chatparsers",
+            "value": 0,
+            "methods": [
+                {
+                    "name": "_read_file_into_list",
+                    "value": 0
+                },
+                {
+                    "name": "_parse_message",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "WhatsAppParser=>chatminer.chatparsers",
+            "value": 2.4444444444444446,
+            "methods": [
+                {
+                    "name": "__init__",
+                    "value": 0.2
+                },
+                {
+                    "name": "parse_file_into_df",
+                    "value": 0.888888888888889
+                },
+                {
+                    "name": "_read_file_into_list",
+                    "value": 0.37777777777777777
+                },
+                {
+                    "name": "_format_datetime",
+                    "value": 0.2
+                },
+                {
+                    "name": "_infer_datatime_format",
+                    "value": 0.2
+                },
+                {
+                    "name": "_parse_message",
+                    "value": 0.37777777777777777
+                },
+                {
+                    "name": "_get_message_author",
+                    "value": 0.2
+                }
+            ]
+        },
+        {
+            "name": "FacebookMessengerParser=>chatminer.chatparsers",
+            "value": 0,
+            "methods": [
+                {
+                    "name": "_read_file_into_list",
+                    "value": 0
+                },
+                {
+                    "name": "_parse_message",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "TelegramJsonParser=>chatminer.chatparsers",
+            "value": 0,
+            "methods": [
+                {
+                    "name": "_read_file_into_list",
+                    "value": 0
+                },
+                {
+                    "name": "_parse_message",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "TelegramHtmlParser=>chatminer.chatparsers",
+            "value": 0,
+            "methods": [
+                {
+                    "name": "_read_file_into_list",
+                    "value": 0
+                },
+                {
+                    "name": "_parse_message",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Global=>chatminer.visualizations",
+            "value": 0,
+            "methods": [
+                {
+                    "name": "sunburst",
+                    "value": 0
+                },
+                {
+                    "name": "wordcloud",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Global=>test.test_parsers",
+            "value": 0.5333333333333333,
+            "methods": [
+                {
+                    "name": "test_whatsapp",
+                    "value": 0.5333333333333333
+                }
+            ]
+        }
+    ],
+    "links": [
+        {
+            "weight": 1,
+            "time": 0,
+            "source": "Global=>test.test_parsers",
+            "target": "Global=>test.test_parsers",
+            "sourceMethod": "entry_point",
+            "targetMethod": "test_whatsapp"
+        },
+        {
+            "weight": 1,
+            "time": 1,
+            "source": "Global=>test.test_parsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "test_whatsapp",
+            "targetMethod": "__init__"
+        },
+        {
+            "weight": 1,
+            "time": 5,
+            "source": "Global=>test.test_parsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "test_whatsapp",
+            "targetMethod": "parse_file_into_df"
+        },
+        {
+            "weight": 1,
+            "time": 103,
+            "source": "Global=>test.test_parsers",
+            "target": "Global=>test.test_parsers",
+            "sourceMethod": "test_whatsapp",
+            "targetMethod": "entry_point"
+        },
+        {
+            "weight": 2,
+            "time": 2,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "__init__",
+            "targetMethod": "__init__"
+        },
+        {
+            "weight": 1,
+            "time": 4,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "Global=>test.test_parsers",
+            "sourceMethod": "__init__",
+            "targetMethod": "test_whatsapp"
+        },
+        {
+            "weight": 1,
+            "time": 6,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "parse_file_into_df",
+            "targetMethod": "_read_file_into_list"
+        },
+        {
+            "weight": 1,
+            "time": 38,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "parse_file_into_df",
+            "targetMethod": "_infer_datatime_format"
+        },
+        {
+            "weight": 15,
+            "time": 40,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "parse_file_into_df",
+            "targetMethod": "_parse_message"
+        },
+        {
+            "weight": 1,
+            "time": 100,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "parse_file_into_df",
+            "targetMethod": "_add_metadata"
+        },
+        {
+            "weight": 1,
+            "time": 102,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "Global=>test.test_parsers",
+            "sourceMethod": "parse_file_into_df",
+            "targetMethod": "test_whatsapp"
+        },
+        {
+            "weight": 15,
+            "time": 7,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "_read_file_into_list",
+            "targetMethod": "_format_datetime"
+        },
+        {
+            "weight": 1,
+            "time": 37,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "_read_file_into_list",
+            "targetMethod": "parse_file_into_df"
+        },
+        {
+            "weight": 15,
+            "time": 8,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "_format_datetime",
+            "targetMethod": "_read_file_into_list"
+        },
+        {
+            "weight": 1,
+            "time": 39,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "_infer_datatime_format",
+            "targetMethod": "parse_file_into_df"
+        },
+        {
+            "weight": 15,
+            "time": 41,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "_parse_message",
+            "targetMethod": "_get_message_author"
+        },
+        {
+            "weight": 15,
+            "time": 43,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "_parse_message",
+            "targetMethod": "parse_file_into_df"
+        },
+        {
+            "weight": 15,
+            "time": 42,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "_get_message_author",
+            "targetMethod": "_parse_message"
+        },
+        {
+            "weight": 1,
+            "time": 101,
+            "source": "WhatsAppParser=>chatminer.chatparsers",
+            "target": "WhatsAppParser=>chatminer.chatparsers",
+            "sourceMethod": "_add_metadata",
+            "targetMethod": "parse_file_into_df"
+        }
+    ]
+}

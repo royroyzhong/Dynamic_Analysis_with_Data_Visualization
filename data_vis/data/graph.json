@@ -1,0 +1,169 @@
+{
+    "name": "world",
+    "children": [
+        {
+            "name": "python",
+            "children": [
+                {
+                    "name": "chatminer.chatparsers",
+                    "children": [
+                        {
+                            "name": "Parser",
+                            "value": 0,
+                            "children": [
+                                {
+                                    "name": "__init__",
+                                    "value": 0
+                                },
+                                {
+                                    "name": "parse_file_into_df",
+                                    "value": 0
+                                },
+                                {
+                                    "name": "write_df_to_csv",
+                                    "value": 0
+                                },
+                                {
+                                    "name": "_add_metadata",
+                                    "value": 0
+                                },
+                                {
+                                    "name": "_read_file_into_list",
+                                    "value": 0
+                                },
+                                {
+                                    "name": "_parse_message",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        {
+                            "name": "SignalParser",
+                            "value": 0,
+                            "children": [
+                                {
+                                    "name": "_read_file_into_list",
+                                    "value": 0
+                                },
+                                {
+                                    "name": "_parse_message",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        {
+                            "name": "WhatsAppParser",
+                            "value": 2.4444444444444446,
+                            "children": [
+                                {
+                                    "name": "__init__",
+                                    "value": 0.2
+                                },
+                                {
+                                    "name": "parse_file_into_df",
+                                    "value": 0.888888888888889
+                                },
+                                {
+                                    "name": "_read_file_into_list",
+                                    "value": 0.37777777777777777
+                                },
+                                {
+                                    "name": "_format_datetime",
+                                    "value": 0.2
+                                },
+                                {
+                                    "name": "_infer_datatime_format",
+                                    "value": 0.2
+                                },
+                                {
+                                    "name": "_parse_message",
+                                    "value": 0.37777777777777777
+                                },
+                                {
+                                    "name": "_get_message_author",
+                                    "value": 0.2
+                                }
+                            ]
+                        },
+                        {
+                            "name": "FacebookMessengerParser",
+                            "value": 0,
+                            "children": [
+                                {
+                                    "name": "_read_file_into_list",
+                                    "value": 0
+                                },
+                                {
+                                    "name": "_parse_message",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TelegramJsonParser",
+                            "value": 0,
+                            "children": [
+                                {
+                                    "name": "_read_file_into_list",
+                                    "value": 0
+                                },
+                                {
+                                    "name": "_parse_message",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TelegramHtmlParser",
+                            "value": 0,
+                            "children": [
+                                {
+                                    "name": "_read_file_into_list",
+                                    "value": 0
+                                },
+                                {
+                                    "name": "_parse_message",
+                                    "value": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "chatminer.visualizations",
+                    "children": [
+                        {
+                            "name": "GlobalFunction",
+                            "value": 0,
+                            "children": [
+                                {
+                                    "name": "sunburst",
+                                    "value": 0
+                                },
+                                {
+                                    "name": "wordcloud",
+                                    "value": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "test.test_parsers",
+                    "children": [
+                        {
+                            "name": "GlobalFunction",
+                            "value": 0.5333333333333333,
+                            "children": [
+                                {
+                                    "name": "test_whatsapp",
+                                    "value": 0.5333333333333333
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "links": [
+        {
+            "source": "test_whatsapp",
+            "target": "__init__",
+            "value": 1
+        },
+        {
+            "source": "__init__",
+            "target": "__init__",
+            "value": 1
+        },
+        {
+            "source": "test_whatsapp",
+            "target": "parse_file_into_df",
+            "value": 1
+        },
+        {
+            "source": "parse_file_into_df",
+            "target": "_read_file_into_list",
+            "value": 1
+        },
+        {
+            "source": "_read_file_into_list",
+            "target": "_format_datetime",
+            "value": 15
+        },
+        {
+            "source": "parse_file_into_df",
+            "target": "_infer_datatime_format",
+            "value": 1
+        },
+        {
+            "source": "parse_file_into_df",
+            "target": "_parse_message",
+            "value": 15
+        },
+        {
+            "source": "_parse_message",
+            "target": "_get_message_author",
+            "value": 15
+        },
+        {
+            "source": "parse_file_into_df",
+            "target": "_add_metadata",
+            "value": 1
+        }
+    ]
+}

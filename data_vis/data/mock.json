@@ -1,0 +1,39 @@
+{
+    "nodes": [
+        {
+            "name": "PrettyPrinter",
+            "methods": [
+                {
+                    "name": "print()",
+                    "numberOfTimeCall": 5,
+                    "lineNumber": 10
+                },
+                {
+                    "name": "toString()",
+                    "numberOfTimeCall": 5,
+                    "lineNumber": 10
+                }
+            ],
+            "neighbors": [
+                "BadPrinter",
+                "GoodPrinter"
+            ],
+            "size": 10,
+            "numberOfTimeCall": 10
+        }
+    ],
+    "links": [
+        {
+            "source": "PrettyPrinter",
+            "target": "BadPrinter"
+        },
+        {
+            "source": "PrettyPrinter",
+            "target": "GoodPrinter"
+        },
+        {
+            "source": "GoodPrinter",
+            "target": "BadPrinter"
+        }
+    ]
+}

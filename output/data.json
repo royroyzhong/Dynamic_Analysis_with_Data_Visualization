@@ -1,0 +1,169 @@
+{
+    "global_funcs": {},
+    "imports": {
+        "json": null,
+        "logging": null,
+        "re": null,
+        "datetime": null,
+        "abc": [
+            "ABC",
+            "abstractmethod"
+        ],
+        "enum": [
+            "Enum"
+        ],
+        "pathlib": [
+            "Path"
+        ],
+        "dateutil": [
+            "parser"
+        ],
+        "bs4": [
+            "BeautifulSoup"
+        ],
+        "pandas": "pd"
+    },
+    "Parser": {
+        "__init__": [
+            "Path line:17",
+            "self._file.is_file line:18",
+            "logging.getLogger line:24"
+        ],
+        "parse_file_into_df": [
+            "self._read_file_into_list line:30",
+            "self._parse_message line:34",
+            "parsed_messages.append line:36",
+            "pd.DataFrame line:38",
+            "self._logger.info line:39",
+            "self._add_metadata line:40",
+            "self._logger.info line:41"
+        ],
+        "write_df_to_csv": [
+            "self.df.to_csv line:45",
+            "self._logger.error line:47"
+        ],
+        "_add_metadata": [
+            "self.df.dt.day_name line:50",
+            "self.df.apply line:52",
+            "self.df.apply line:53"
+        ],
+        "_read_file_into_list": [],
+        "_parse_message": []
+    },
+    "SignalParser": {
+        "_read_file_into_list": [
+            "self._file.open line:69",
+            "reversed line:70",
+            "line.strip line:73",
+            "re.match line:76",
+            "buffer.append line:78",
+            "buffer.reverse line:79",
+            "self.messages.append line:80",
+            "buffer.clear line:81",
+            "self.messages.append line:83",
+            "buffer.append line:85",
+            "self._logger.info line:86"
+        ],
+        "_parse_message": [
+            "mess.split line:89",
+            "datetimeparser.parse line:90",
+            "mess.split line:91",
+            "author.strip line:92",
+            "mess.strip line:93"
+        ]
+    },
+    "WhatsAppParser": {
+        "__init__": [
+            "super line:102"
+        ],
+        "parse_file_into_df": [
+            "self._read_file_into_list line:106",
+            "self._infer_datatime_format line:107",
+            "self._parse_message line:111",
+            "parsed_messages.append line:113",
+            "pd.DataFrame line:115",
+            "self._logger.info line:116",
+            "self._add_metadata line:117",
+            "self._logger.info line:118"
+        ],
+        "_read_file_into_list": [
+            "self._file.open line:124",
+            "reversed line:125",
+            "line.strip line:128",
+            "re.match line:133",
+            "self._format_datetime line:134",
+            "buffer.append line:136",
+            "buffer.reverse line:137",
+            "self.messages.append line:138",
+            "buffer.clear line:139",
+            "self.messages.append line:141",
+            "buffer.append line:143",
+            "self._logger.info line:145"
+        ],
+        "_format_datetime": [
+            "mess.replace line:150",
+            "mess.replace line:153"
+        ],
+        "_infer_datatime_format": [
+            "line.replace line:160",
+            "int line:161",
+            "line.split line:161",
+            "max line:162",
+            "max line:163",
+            "ValueError line:165",
+            "self._logger.info line:168",
+            "self._logger.info line:171",
+            "self._logger.warning line:174"
+        ],
+        "_parse_message": [
+            "datetimeparser.parse line:182",
+            "datetimeparser.parse line:186",
+            "self._get_message_author line:190",
+            "mess.split line:192",
+            "len line:194",
+            "self._logger.warning line:195",
+            "self._logger.warning line:196",
+            "mess.split line:198"
+        ],
+        "_get_message_author": [
+            ".join line:210",
+            "re.search line:211",
+            "re.sub line:212"
+        ]
+    },
+    "FacebookMessengerParser": {
+        "_read_file_into_list": [
+            "self._file.open line:219",
+            "reversed line:220",
+            "self.messages.append line:223",
+            "self._logger.info line:224"
+        ],
+        "_parse_message": [
+            "datetime.datetime.fromtimestamp line:235"
+        ]
+    },
+    "TelegramJsonParser": {
+        "_read_file_into_list": [
+            "self._file.open line:244",
+            "json.load line:245",
+            "self._logger.info line:247"
+        ],
+        "_parse_message": [
+            "datetime.datetime.fromtimestamp line:252"
+        ]
+    },
+    "TelegramHtmlParser": {
+        "_read_file_into_list": [
+            "self._file.open line:260",
+            "BeautifulSoup line:261",
+            "list line:262",
+            "self._logger.info line:265"
+        ],
+        "_parse_message": [
+            "mess.find line:268",
+            "from_name.find_next line:269",
+            "datetimeparser.parse line:276"
+        ]
+    },
+    "StartOfDateType": {}
+}

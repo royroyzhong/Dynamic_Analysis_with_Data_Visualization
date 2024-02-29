@@ -1,0 +1,7 @@
+pandas
+networkx
+beautifulsoup4
+numpy
+matplotlib
+wordcloud
+python-dateutil

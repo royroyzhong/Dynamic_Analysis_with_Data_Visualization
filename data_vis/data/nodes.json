@@ -1,0 +1,152 @@
+{
+    "nodes": [
+        {
+            "name": "Parser",
+            "methods": [
+                "__init__",
+                "parse_file_into_df",
+                "write_df_to_csv",
+                "_add_metadata",
+                "_read_file_into_list",
+                "_parse_message"
+            ]
+        },
+        {
+            "name": "SignalParser",
+            "methods": [
+                "_read_file_into_list",
+                "_parse_message"
+            ]
+        },
+        {
+            "name": "WhatsAppParser",
+            "methods": [
+                "__init__",
+                "parse_file_into_df",
+                "_read_file_into_list",
+                "_format_datetime",
+                "_infer_datatime_format",
+                "_parse_message",
+                "_get_message_author"
+            ]
+        },
+        {
+            "name": "FacebookMessengerParser",
+            "methods": [
+                "_read_file_into_list",
+                "_parse_message"
+            ]
+        },
+        {
+            "name": "TelegramJsonParser",
+            "methods": [
+                "_read_file_into_list",
+                "_parse_message"
+            ]
+        },
+        {
+            "name": "TelegramHtmlParser",
+            "methods": [
+                "_read_file_into_list",
+                "_parse_message"
+            ]
+        },
+        {
+            "name": "StartOfDateType",
+            "methods": []
+        },
+        {
+            "name": "directed",
+            "methods": []
+        },
+        {
+            "name": "multigraph",
+            "methods": []
+        },
+        {
+            "name": "graph",
+            "methods": []
+        },
+        {
+            "name": "nodes",
+            "methods": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23"
+            ]
+        },
+        {
+            "name": "links",
+            "methods": []
+        },
+        {
+            "name": "directed",
+            "methods": []
+        },
+        {
+            "name": "multigraph",
+            "methods": []
+        },
+        {
+            "name": "graph",
+            "methods": []
+        },
+        {
+            "name": "nodes",
+            "methods": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8"
+            ]
+        },
+        {
+            "name": "links",
+            "methods": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16"
+            ]
+        }
+    ]
+}
